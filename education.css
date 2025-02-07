@@ -80,14 +80,16 @@ main h1 {
 header {
     background-color: rgb(5, 82, 5);
     padding: 10px;
-    text-align: center;
+}
+
+header p {
+    padding-left: 5%;
 }
 
 footer {
     margin-top: auto;
     padding: 2%;
     background-color: rgb(5, 82, 5);
-    text-align: center;
 }
 
 @media screen and (max-width: 750px) {
@@ -111,6 +113,15 @@ footer {
 
     .content {
         flex-direction: column;
+    }
+    footer {
+        text-align: center;
+    }
+    header {
+        text-align: center;
+    }
+    header p {
+        padding: 0%;
     }
 }
 
