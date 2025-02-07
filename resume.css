@@ -5,7 +5,12 @@
         flex-direction: row;
     }
     header {
-        display: block;
-        margin: auto;
+        text-align: center
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%;
     }
 }
