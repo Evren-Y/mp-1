@@ -50,7 +50,6 @@ main ul {
     padding: 10%;
 }
 main ul li {
-    border-bottom: 3px solid rgb(76, 76, 158);
     padding: 10%;
 }
 header {
@@ -64,11 +63,16 @@ main {
     background-color: rgb(76, 160, 160);
     flex-basis: 70%;
     max-width: 70%;
+    height: 100%;
 }
 main h1 {
     font-size: calc(5vw - 2vh);
     text-align: center;
     padding: 1%;
+}
+img {
+    height: 50%;
+    width: 50%;
 }
 
 @media screen and (max-width: 750px) {
