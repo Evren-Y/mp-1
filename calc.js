@@ -5,8 +5,11 @@ function addition() {
     second=Number(second);
 
     let result = first + second;
-
-    document.getElementById("output").innerHTML=`<h3>${result}</h3>`;
+    if (result < 0) {
+        document.getElementById("output").innerHTML=`<h3 style="color: red;">${result}</h3>`;
+    } else {
+        document.getElementById("output").innerHTML=`<h3>${result}</h3>`;
+    }
 }
 
 function subtraction() {
@@ -17,7 +20,11 @@ function subtraction() {
 
     let result = first - second;
 
-    document.getElementById("output").innerHTML=`<h3>${result}</h3>`;
+    if (result < 0) {
+        document.getElementById("output").innerHTML=`<h3 style="color: red;">${result}</h3>`;
+    } else {
+        document.getElementById("output").innerHTML=`<h3>${result}</h3>`;
+    }
 }
 
 function multiplication() {
@@ -28,7 +35,11 @@ function multiplication() {
 
     let result = first * second;
 
-    document.getElementById("output").innerHTML=`<h3>${result}</h3>`;
+    if (result < 0) {
+        document.getElementById("output").innerHTML=`<h3 style="color: red;">${result}</h3>`;
+    } else {
+        document.getElementById("output").innerHTML=`<h3>${result}</h3>`;
+    }
 }
 
 function division() {
@@ -39,7 +50,11 @@ function division() {
 
     let result = first/second;
 
-    document.getElementById("output").innerHTML=`<h3>${result}</h3>`;
+    if (result < 0) {
+        document.getElementById("output").innerHTML=`<h3 style="color: red;">${result}</h3>`;
+    } else {
+        document.getElementById("output").innerHTML=`<h3>${result}</h3>`;
+    }
 }
 
 function power() {
@@ -54,7 +69,11 @@ function power() {
         startNumber = startNumber * first;
     }
 
-    document.getElementById("output").innerHTML= `<h3>${startNumber}</h3>`;
+    if (startNumber < 0) {
+        document.getElementById("output").innerHTML= `<h3 style="color: red;">${startNumber}</h3>`;
+    } else {
+        document.getElementById("output").innerHTML= `<h3>${startNumber}</h3>`;
+    }
 }
 
 function clearAll() {
